@@ -1,6 +1,6 @@
-import 'package:flutter/foundation.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter/widgets.dart';
+import 'package:flutter_web/foundation.dart';
+import 'package:flutter_web/scheduler.dart';
+import 'package:flutter_web/widgets.dart';
 
 /// Wether to behave like in release mode or allow hot-reload for hooks.
 ///
@@ -325,7 +325,7 @@ This may happen if the call to `Hook.use` is made under some condition.
             exception: exception,
             stack: stack,
             library: 'hooks library',
-            context: 'while calling `didBuild` on ${hook.runtimeType}',
+            //context: 'while calling `didBuild` on ${hook.runtimeType}',
           ));
         }
       }
@@ -345,7 +345,7 @@ This may happen if the call to `Hook.use` is made under some condition.
             exception: exception,
             stack: stack,
             library: 'hooks library',
-            context: 'while disposing ${hook.runtimeType}',
+            //context: 'while disposing ${hook.runtimeType}',
           ));
         }
       }
